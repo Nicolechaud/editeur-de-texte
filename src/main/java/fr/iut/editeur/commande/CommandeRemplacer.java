@@ -14,8 +14,10 @@ public class CommandeRemplacer extends CommandeDocument{
         }
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
+        String contenu ="";
+        contenu+=parameters[3];
 
-        this.document.remplacer(debut,fin,parameters[3]);
+        this.document.remplacer(debut,fin,contenu);
         super.executer();
     }
 }
