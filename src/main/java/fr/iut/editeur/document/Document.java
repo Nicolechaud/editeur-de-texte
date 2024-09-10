@@ -25,6 +25,10 @@ public class Document {
         return this.texte;
     }
 
+    public void effacer(int debut , int fin){
+        remplacer(debut,fin,"");
+    }
+
     public void remplacer(int debut, int fin, String remplacement) {
         String partieGauche = texte.substring(0, debut);
         String partieDroite = texte.substring(fin + 1);
