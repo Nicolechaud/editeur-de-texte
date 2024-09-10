@@ -30,7 +30,7 @@ public class Document {
     }
 
     public void clear(){
-        this.texte = "bug léger";
+        this.texte = "";
     }
 
     public void remplacer(int debut, int fin, String remplacement) {
