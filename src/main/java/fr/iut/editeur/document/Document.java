@@ -29,6 +29,10 @@ public class Document {
         remplacer(debut,fin,"");
     }
 
+    public void clear(){
+        this.texte = "bug léger";
+    }
+
     public void remplacer(int debut, int fin, String remplacement) {
         String partieGauche = texte.substring(0, debut);
         String partieDroite = texte.substring(fin + 1);
